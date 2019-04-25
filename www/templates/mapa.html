@@ -1,0 +1,24 @@
+<ion-view title="Mapa" id="page3">
+  <ion-content padding="false" scroll="false" class="has-header">
+    <ion-list id="mapa-list2">
+      <ion-item id="mapa-list-item7" class="distance">Você está a
+        <b>{{distance}}</b> metros de distância</ion-item>
+    </ion-list>
+    <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options" bounds="map.bounds" style="height:340px;">
+      <ui-gmap-layer type="TrafficLayer" show="map.showTraficLayer"></ui-gmap-layer>
+      <ui-gmap-marker idkey="tracker.tracker_eui" coords="map.center">
+      </ui-gmap-marker>
+    </ui-gmap-google-map>
+    <ion-list id="mapa-list1">
+      <ion-item>
+        <p>
+          <b>{{tracker.equipment_name}}</b>
+        </p>
+        <p class="serial-number">{{tracker.serial_number}}</p>
+        <p>
+          <em>{{tracker_location.created_at | date:'dd/MM/yyyy HH:mm'}}</em>
+        </p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

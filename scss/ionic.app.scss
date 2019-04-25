@@ -1,0 +1,52 @@
+$dark: #282E35;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.title {
+	color: #00BDCC;
+}
+
+.distance {
+	text-align: center;
+}
+
+// This code is required for Angular Google Maps to funciton
+ui-gmap-google-map {
+	height: 100%;
+	width: 100%;
+	display: block;
+	.angular-google-map {
+		height: 100%;
+		.angular-google-map-container {
+			height: 100%;
+		}
+		
+	}
+}
+.search-trackers {
+	background-color: #E6EBF1;
+}
+
+ion-view,.pane,.view {
+	background-color: #F5F6FA;
+}
+
+body.platform-ios {
+	font-family: Roboto, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Roboto, sans-serif;
+}
+
+body.platform-android {
+	font-family: Roboto, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Roboto, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

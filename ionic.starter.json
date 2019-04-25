@@ -1,0 +1,5 @@
+{
+  "name": "Blank Starter",
+  "baseref": "master",
+  "gulpStartupTasks": ["sass", "watch"]
+}
