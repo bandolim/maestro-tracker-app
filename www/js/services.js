@@ -6,7 +6,7 @@ angular.module('app.services',[])
 
 .service('trackersService', ['$http','$q',function($http,$q){
 
-    import Geolocation from 'node_modules/@ionic-native/geolocation/ngx';
+    import { Geolocation } from 'node_modules/@ionic-native/geolocation/ngx';
 
 
     return {
