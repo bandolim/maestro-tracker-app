@@ -5,6 +5,10 @@ angular.module('app.services',[])
 }])
 
 .service('trackersService', ['$http','$q',function($http,$q){
+
+    import Geolocation from 'node_modules/@ionic-native/geolocation/ngx';
+
+
     return {
         getTrackers: function(){
             var deferred = $q.defer();
@@ -47,6 +51,16 @@ angular.module('app.services',[])
             var d = R * c; // Distance in km
             
             return d;
+        },
+        getCurrentLocation: function(){
+            Geolocation.getCurrentPosition().then((resp) => {
+                // resp.coords.latitude
+                // resp.coords.longitude
+                console.log(resp.coords);
+            }).catch((error) => {
+                console.log('Error getting location', error);
+            });
+
         }
     }
 }]);

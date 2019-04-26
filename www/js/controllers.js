@@ -57,6 +57,8 @@ function ($scope, $stateParams, trackersService, uiGmapGoogleMapApi) {
         });
         
     });
+
+    trackersService.getCurrentLocation();
     
     
 }])
